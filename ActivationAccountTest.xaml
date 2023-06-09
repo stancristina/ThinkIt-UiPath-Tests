@@ -1,0 +1,530 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ActivationAccountTest" this:ActivationAccountTest.accountToActivateUsername="utilizator-nou-1206960833" this:ActivationAccountTest.accountToActivatePassword="abc@ABC@123" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="accountToActivateUsername" Type="InArgument(x:String)" />
+    <x:Property Name="accountToActivatePassword" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>850.4,1831.2</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivationAccountTest_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ActivationAccountTest" sap:VirtualizedContainerService.HintSize="608,1766.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="adminUsername">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">admin</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="adminPassword">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">admin</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="ui:UiElement" Name="usernameTD" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Welcome, Java Hipster!" sap:VirtualizedContainerService.HintSize="545.6,1654.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8b76b173-4f65-4034-a93a-9cbada043184" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1437.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Sequence DisplayName="Navigate to Sign In" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1703, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="767a3363-d256-42e9-a251-cfd90103ec87" InformativeScreenshot="8a8e4004034a37c9a55847f1780c41e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1641, 272, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl id='login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='A' type='' class='dropdown-item' aaname='                                                          Sign in                         ' check:innerText='Sign in' /&gt;" Guid="630d4a1b-c86e-4774-a239-746b699197e1" InformativeScreenshot="da5e5813ac875e1c9594686b27f03502.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Login as admin" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 373, 376, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control ng-pristine ng-valid ng-touched' aaname='Login' /&gt;" Guid="21925d08-85b9-44bc-aa9e-6c758939aeda" InformativeScreenshot="af679bf61c57051a825586aaafe2496b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">adminUsername</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 481, 376, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-valid' aaname='Password' /&gt;" Guid="fe136ec6-92a8-42e4-b6f6-016f636577a2" InformativeScreenshot="3c94f653b33c8b66c5c67e407b566967.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">adminPassword</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 578, 92, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="cdf6a763-8946-4393-a493-be0b757ef8dc" InformativeScreenshot="12ece58e77204e5d7097f2c34bfa5c2f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Navigate to User Management" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Administration'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1490, 209, 203, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Administration'" FullSelectorArgument="&lt;webctrl id='admin-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='admin-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                       Administration                                      ' check:innerText='Administration' /&gt;" Guid="9789a26a-b287-4a58-bb77-21bcbec20f12" InformativeScreenshot="7b2cf06d67002d9f74681e83a846a1d2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'User management'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1491, 272, 253, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'User management'" FullSelectorArgument="&lt;webctrl aaname='                                                          User m*' class='dropdown-item' parentid='navbarResponsive' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                          User m*' class='dropdown-item' parentid='navbarResponsive' tag='A' type='' check:innerText='User management' /&gt;" Guid="499226f8-37d4-4b98-91bf-5e6f00ac79f1" InformativeScreenshot="20cb61932ed5565999d4f05da1b473b7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Navigate to test user" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Name="exists" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="484.8,90.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <ui:UiElementExists DisplayName="Element Exists 'TD'" sap:VirtualizedContainerService.HintSize="484.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Exists>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">exists</CSharpReference>
+                  </OutArgument>
+                </ui:UiElementExists.Exists>
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f42e96ae-a6db-4089-b94e-6d527f9ac612" InformativeScreenshot="5fadaac382d6fb6af2d7c23df4a6fcd0" TimeoutMS="3000">
+                    <ui:Target.Selector>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">string.Format("&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' visibleinnertext='{0}' /&gt;", accountToActivateUsername)</CSharpValue>
+                      </InArgument>
+                    </ui:Target.Selector>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:UiElementExists>
+              <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="484.8,584" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile.Body>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="449.6,416.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" AlterIfDisabled="False" ClickType="Single" DisplayName="Click '»'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://localhost:8080/admin/user-management" DesignTimeRectangle="985, 920, 43, 47" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'»'" FullSelectorArgument="&lt;webctrl aria-label='Next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next' tag='A' type='' class='page-link' aaname='           »         ' check:innerText='»' /&gt;" Guid="7a2a85f2-0d41-45d8-8719-32099b1ff330" InformativeScreenshot="1b8e10e7ffe019b24dbaee78b139c460.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Users' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:UiElementExists DisplayName="Element Exists 'TD'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                      <ui:UiElementExists.Exists>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">exists</CSharpReference>
+                        </OutArgument>
+                      </ui:UiElementExists.Exists>
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f42e96ae-a6db-4089-b94e-6d527f9ac612" InformativeScreenshot="5fadaac382d6fb6af2d7c23df4a6fcd0" TimeoutMS="3000">
+                          <ui:Target.Selector>
+                            <InArgument x:TypeArguments="x:String">
+                              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">string.Format("&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' visibleinnertext='{0}' /&gt;", accountToActivateUsername)</CSharpValue>
+                            </InArgument>
+                          </ui:Target.Selector>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:UiElementExists.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:UiElementExists>
+                  </Sequence>
+                </ui:InterruptibleWhile.Body>
+                <ui:InterruptibleWhile.Condition>
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">!exists</CSharpValue>
+                </ui:InterruptibleWhile.Condition>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InterruptibleWhile>
+              <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="484.8,86.4" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1">
+                <ui:WaitUiElementAppear.FoundElement>
+                  <OutArgument x:TypeArguments="ui:UiElement">
+                    <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">usernameTD</CSharpReference>
+                  </OutArgument>
+                </ui:WaitUiElementAppear.FoundElement>
+                <ui:WaitUiElementAppear.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cda082b5-1d4f-41e5-b140-91ea5d75cf81" Selector="&lt;webctrl tag='TABLE' /&gt;&#xD;&#xA;&lt;webctrl tag='TD' visibleinnertext='{{accountToActivateUsername}}' /&gt;&#xD;&#xA;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:WaitUiElementAppear.Target>
+              </ui:WaitUiElementAppear>
+            </Sequence>
+            <Sequence DisplayName="Activate account" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:UiElement" Name="parentRow" />
+                <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="children" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetAncestor DisplayName="Get Ancestor" sap:VirtualizedContainerService.HintSize="387.2,86.4" sap2010:WorkflowViewState.IdRef="GetAncestor_1" UpLevels="1">
+                <ui:GetAncestor.Ancestor>
+                  <OutArgument x:TypeArguments="ui:UiElement">
+                    <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">parentRow</CSharpReference>
+                  </OutArgument>
+                </ui:GetAncestor.Ancestor>
+                <ui:GetAncestor.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="e8a7bf4a-f34a-4a4d-a00b-bfafd9bd8a96">
+                    <ui:Target.Element>
+                      <InArgument x:TypeArguments="ui:UiElement">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">usernameTD</CSharpValue>
+                      </InArgument>
+                    </ui:Target.Element>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:GetAncestor.Target>
+              </ui:GetAncestor>
+              <ui:FindChildren DisplayName="Find Children" Filter="&lt;webctrl tag='BUTTON' visibleinnertext='Deactivated' /&gt;" sap:VirtualizedContainerService.HintSize="387.2,86.4" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_DESCENDANTS">
+                <ui:FindChildren.Children>
+                  <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                    <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">children</CSharpReference>
+                  </OutArgument>
+                </ui:FindChildren.Children>
+                <ui:FindChildren.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="a9489fd7-88e8-4ab1-be3a-96058e1efcce">
+                    <ui:Target.Element>
+                      <InArgument x:TypeArguments="ui:UiElement">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">parentRow</CSharpValue>
+                      </InArgument>
+                    </ui:Target.Element>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:FindChildren.Target>
+              </ui:FindChildren>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight" sap:VirtualizedContainerService.HintSize="387.2,137.6" sap2010:WorkflowViewState.IdRef="NHighlight_1" Version="V3">
+                <uix:NHighlight.InUiElement>
+                  <InArgument x:TypeArguments="ui:UiElement">
+                    <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">children.ElementAt(0)</CSharpValue>
+                  </InArgument>
+                </uix:NHighlight.InUiElement>
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="3eb9a239-36f6-44a0-930b-4aca2af8259b" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="387.2,137.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" Version="V3">
+                <uix:NClick.InUiElement>
+                  <InArgument x:TypeArguments="ui:UiElement">
+                    <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">children.ElementAt(0)</CSharpValue>
+                  </InArgument>
+                </uix:NClick.InUiElement>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+              <ui:FindChildren DisplayName="Find Children" Filter="&lt;webctrl tag='BUTTON' visibleinnertext='Activated' /&gt;" sap:VirtualizedContainerService.HintSize="387.2,86.4" sap2010:WorkflowViewState.IdRef="FindChildren_2" Scope="FIND_DESCENDANTS">
+                <ui:FindChildren.Children>
+                  <OutArgument x:TypeArguments="scg:IEnumerable(ui:UiElement)">
+                    <CSharpReference x:TypeArguments="scg:IEnumerable(ui:UiElement)" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">children</CSharpReference>
+                  </OutArgument>
+                </ui:FindChildren.Children>
+                <ui:FindChildren.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="a9489fd7-88e8-4ab1-be3a-96058e1efcce">
+                    <ui:Target.Element>
+                      <InArgument x:TypeArguments="ui:UiElement">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">parentRow</CSharpValue>
+                      </InArgument>
+                    </ui:Target.Element>
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:FindChildren.Target>
+              </ui:FindChildren>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight" sap:VirtualizedContainerService.HintSize="387.2,137.6" sap2010:WorkflowViewState.IdRef="NHighlight_2" Version="V3">
+                <uix:NHighlight.InUiElement>
+                  <InArgument x:TypeArguments="ui:UiElement">
+                    <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">children.ElementAt(0)</CSharpValue>
+                  </InArgument>
+                </uix:NHighlight.InUiElement>
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="3eb9a239-36f6-44a0-930b-4aca2af8259b" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+            </Sequence>
+            <Sequence DisplayName="Sign Out" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/admin/user-management?page=3&amp;sort=id,asc" DesignTimeRectangle="1682, 217, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="3faf7bab-2bcc-40c0-84fa-ff9d637a0f6e" InformativeScreenshot="ab24d7fdaea25d91691a36da1001786c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Users' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign out'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/admin/user-management?page=3&amp;sort=id,asc" DesignTimeRectangle="1620, 360, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sign out'" FullSelectorArgument="&lt;webctrl id='logout' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='logout' tag='A' type='' class='dropdown-item' aaname='                                                          Sign out                         ' check:innerText='Sign out' /&gt;" Guid="0f3516a7-49f6-46bd-9393-e1ce755f590d" InformativeScreenshot="cde4cd55dc251e954c2b0aef80b5992f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Users' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Navigate to Sign In" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1703, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="767a3363-d256-42e9-a251-cfd90103ec87" InformativeScreenshot="8a8e4004034a37c9a55847f1780c41e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1641, 272, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl id='login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='A' type='' class='dropdown-item' aaname='                                                          Sign in                         ' check:innerText='Sign in' /&gt;" Guid="630d4a1b-c86e-4774-a239-746b699197e1" InformativeScreenshot="da5e5813ac875e1c9594686b27f03502.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Login as activated user" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 373, 376, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control ng-pristine ng-valid ng-touched' aaname='Login' /&gt;" Guid="21925d08-85b9-44bc-aa9e-6c758939aeda" InformativeScreenshot="af679bf61c57051a825586aaafe2496b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">accountToActivateUsername</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 481, 376, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-valid' aaname='Password' /&gt;" Guid="fe136ec6-92a8-42e4-b6f6-016f636577a2" InformativeScreenshot="3c94f653b33c8b66c5c67e407b566967.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">accountToActivatePassword</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="747, 578, 92, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="cdf6a763-8946-4393-a493-be0b757ef8dc" InformativeScreenshot="12ece58e77204e5d7097f2c34bfa5c2f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Validate login worked" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Library'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1583, 217, 110, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Library'" FullSelectorArgument="&lt;webctrl href='/library' parentid='navbarResponsive' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl href='/library' parentid='navbarResponsive' tag='A' type='' class='nav-link' aaname='                                                                       Library                                      ' check:innerText='Library' /&gt;" Guid="bd9835cd-1fe7-4cd3-a54b-3dc7b29dfe3e" InformativeScreenshot="f060d78710ccf09bcfce3b7191b1e91d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+            </Sequence>
+            <Sequence DisplayName="Sign Out" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/admin/user-management?page=3&amp;sort=id,asc" DesignTimeRectangle="1682, 217, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="3faf7bab-2bcc-40c0-84fa-ff9d637a0f6e" InformativeScreenshot="ab24d7fdaea25d91691a36da1001786c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Users' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign out'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8b76b173-4f65-4034-a93a-9cbada043184" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/admin/user-management?page=3&amp;sort=id,asc" DesignTimeRectangle="1620, 360, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Sign out'" FullSelectorArgument="&lt;webctrl id='logout' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='logout' tag='A' type='' class='dropdown-item' aaname='                                                          Sign out                         ' check:innerText='Sign out' /&gt;" Guid="0f3516a7-49f6-46bd-9393-e1ce755f590d" InformativeScreenshot="cde4cd55dc251e954c2b0aef80b5992f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Users' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVGSURBVGhD7Vf7T1NXHO8fxIa6/bBkPyiKETOzLJmJWbLE/bBHsmSbCdC5sC1MAgEFNmUIm0bqpi2PDRBqQAFpKfJmKk8LbWGj4/0oFErf3ec8Wq+3Mkp79YbkfvLJzc2953zP53PO97xUoX0OxYDcUAzIDcWA3FAMyA3FgNxQDMgNxYDcUAzIDcWA3BAaCDLMr23qB6eu3hsq0j+60vTktulpx9i/M8vOQIAX4AgFeT0pQMKFEQgGZtdcXZblmr6Z8nZbYbO5rN1aN2i3LW3yEhSs4jMD+LTt9eXVDbxxvuq1DG1Sulb4PKDWHc+pV996WNdrWVx3CUNIAkRzuDytYwt5+vEz5b3HLnUcKTCGacDzcIHx6EXjt7Uj6y6PsHVugH3K0nVDboRJAgq/w8zZ0hZtpzkRJ6wi4HR7m4fnMquHUguZaEMKVcx0h1/4l5QC41faxz4kQ3j8mQESaGJ29UCmjkjE839J/NCROfR15ZcVxvZRu9vnJynASEHDRoOXwYs/EBi2O/Lvmk/+2CmUm3JxNxYYe6wrkQaIAdbkTeO4SGjM1J7Ma7jWNhIZEIBFF4H92vL47j6Z/VQzCCkxKX6eqHK5ZTIyAakBGvmLG8YoZTExKYOMG4blraya7Jpey7wD0UhQ1tnhF2Bl063pnH6/tFuQHmJ9uxJVPq4YIOFoNzEDIUzfI9m1ImXxkObVOY1p6O8l1gbD4ob75zbLOz/xbBFp2hMR4USRadnpZpF5Co3ZV2LJ/l1JZjydHq9n6j6/boCNxY3t4nsTaJJJZxRp2hNZBNME7yBu4JbpKZmaUYISIrWRShZEkjAiHQmypNUC2SSFqI3gOU2HJCMgJHoEBsIdL1aQID/RDGJf5QY8Pn9qTv3LMVApuXRG5OTalocbsC04iPp9ZQBhe+luQAw0DNhEbUtCGEhWV708AxWmKazOxEBubb+obUkYNkAmgOQ2EFBdMwzxxMDZ0lZR29IwQ3u6uOmzm39RAwktndFEzDNlPT5/QOX1+Y9eqBO3HS/R69CNJ3bla22jbq8fK0R1/8ypyw+ZDTIUUowG4uBwuu7yqjZcnuQoHfETEzdDixPe9OI6xpZtMsCcYzu7fow0nC+NAcaJ+Q3VP0sbpNtEOvZEtoJRnspvNIzaA+G7DzHADkIhXFOCfbbVj67303EgFKmJg722FZVlzkE2f5GmPRHS07Vvf/fHjQejbp8vIj0a+O71I6Ps714hGSVSEwcfjC+oMNbxjUAk3d/8pgrr2BI7S/OU2cFA+C/2IJzt0orZAUksK3bi2qlybntwfhSJi4UYt4NqHS6Z2AfJPXYH0dFgHgD76lZu4/jxwg6RrNg5ueBUIV8/LLkvErcTSa/Tw+ZBdWX6byacYbkWoorr2xW0/DMb1kXnhYYx2OBrVJTKFxKF3yvpwk2Q7AONse/ESJjzVd9X90zOrbHmAa4rLvAQwcDU0ualJnNakUkkdCfCalm7FR1HDOB6mlVJr/Ppt4XzgfU3nuQlQ5uWd+eXlmGe67QPCRMDqU+C0ZDBIK4pv3dNf1Dew+YGpXixwsfDBQbcSJ1uL6rw+wC2NI1hPOWHWmKDKmZMVutO5N7J+bOvzzIPn7QVAtq6pOCBCdDQwNQqBuT01W7sVswJu0DDD86h+OXcpssdRoDXpxFcHm+XefbX1pEi/aPy+8P6wSnrvAPheIlXC+hBt2Ka6h/PlrdbC5vNJW2WpqE53E6ZdFZMYEDYCc+Dl3jV4K2/GNEG9ikUA3JDMSA3FANyQzEgNxQDckMxIDcUA3JDMSA39rmBUOg/fKPUXEGlFhQAAAAASUVORK5CYII=" InformativeScreenshot="cb2941bcd5c5cc8a50626af4e6dce966.jpg" Selector="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" Title="Welcome, Java Hipster!" Url="http://localhost:8080/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

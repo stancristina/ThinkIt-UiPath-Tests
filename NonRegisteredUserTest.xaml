@@ -1,0 +1,494 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="username" Type="OutArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>850.4,1840.8</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NonRegisteredUserTest" sap:VirtualizedContainerService.HintSize="608,1776" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="password">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">abc@ABC@123</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="wrongPassword">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">abc@ABC@124</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="email" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Get Username and Email" sap:VirtualizedContainerService.HintSize="545.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GenerateRandomUsernameAndEmail.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="387.2,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="GenerateRandomUsernameAndEmail.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_username">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">username</CSharpReference>
+          </OutArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="out_email">
+            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">email</CSharpReference>
+          </OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">"Registering user with username " + username + " and email " + email</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Welcome, Java Hipster!" sap:VirtualizedContainerService.HintSize="545.6,1408" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1191.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Sequence DisplayName="Navigate to register" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" CvTextArgument="Account" CvType="Text" DesignTimeRectangle="1703, 155, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="9e6967d4-ee72-4375-9c86-3bf2250deb75" ImageBase64="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" InformativeScreenshot="3401ded925dbae6f3bcd3648570b3552.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" CvTextArgument="Register" CvType="Text" DesignTimeRectangle="1641, 258, 198, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl aaname='                                                          Regist*' class='dropdown-item' parentid='navbarResponsive' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                          Regist*' class='dropdown-item' parentid='navbarResponsive' tag='A' type='' check:innerText='Register' /&gt;" Guid="7ffe9c31-d452-4b14-9f87-5fe0290f388e" ImageBase64="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" InformativeScreenshot="66c5ca04fa318f5e59ca9f159b69cabb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Add account" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="text" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT login'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 438, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT login'" FullSelectorArgument="&lt;webctrl id='login' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='INPUT' type='text' class='form-control ng-pristine ng-invalid ng-touched' aaname='Username' /&gt;" Guid="792ecd56-5fde-4736-83a8-8502875dc1bb" InformativeScreenshot="63f52c518d0134024906d48b7ff12acc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="1682, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="809a1aa9-d20f-4043-aeda-1275a322d0db" InformativeScreenshot="e0cc64b85cd6a41bca5d0a705fbb8b51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Your username'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 491, 1147, 24" DesignTimeScaleFactor="1.25" FriendlyName="'Your username'" FullSelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your username is required.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your username is required.' type='' class='form-text text-danger' aaname='                             Your username is required.                         ' check:text='Your username is required.' /&gt;" Guid="4ad3964f-1240-4cc1-b836-c5a2d7dba0cb" InformativeScreenshot="8d5e77236dbfce653f1c80f764005112.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NHighlight>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT login'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 438, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT login'" FullSelectorArgument="&lt;webctrl id='login' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='INPUT' type='text' class='form-control ng-pristine ng-invalid ng-touched' aaname='Username' /&gt;" Guid="85ed8bde-8e74-4889-a7d3-723e6ee23635" InformativeScreenshot="de8f48f8a7222557d65d4b3f5722a462.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">username</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+            </Sequence>
+            <Sequence DisplayName="Add email" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="text" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT email'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 575, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-pristine ng-invalid ng-touched' aaname='Email' /&gt;" Guid="07bdcb10-6b58-4350-9fb9-ff4501ac1c15" InformativeScreenshot="a143828afa149071ab35adbcee4ab12e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="1682, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="809a1aa9-d20f-4043-aeda-1275a322d0db" InformativeScreenshot="e0cc64b85cd6a41bca5d0a705fbb8b51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Your email is required.'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_2" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 627, 1147, 24" DesignTimeScaleFactor="1.25" FriendlyName="'Your email is required.'" FullSelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your email is required.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your email is required.' type='' class='form-text text-danger' aaname='                             Your email is required.                         ' check:text='Your email is required.' /&gt;" Guid="775b4b89-a5cb-44b3-98a0-929570042b8a" InformativeScreenshot="d51482edcd3797341ea947776ac0dd67.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 575, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control ng-pristine ng-invalid ng-touched' aaname='Email' /&gt;" Guid="24b6da81-16cb-4807-a1b2-7992f38cfc6f" InformativeScreenshot="a143828afa149071ab35adbcee4ab12e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">email</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+            </Sequence>
+            <Sequence DisplayName="Add password" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="text" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT password'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 711, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-invalid' aaname='New password' /&gt;" Guid="bece56e0-183a-409e-85c0-9e8e95f64e37" InformativeScreenshot="24bb1341315048c210d4d20374420287.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="1682, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="809a1aa9-d20f-4043-aeda-1275a322d0db" InformativeScreenshot="e0cc64b85cd6a41bca5d0a705fbb8b51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Your password'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 764, 1147, 24" DesignTimeScaleFactor="1.25" FriendlyName="'Your password'" FullSelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your password is required.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your password is required.' type='' class='form-text text-danger' aaname='                             Your password is required.                         ' check:text='Your password is required.' /&gt;" Guid="94e154fa-369b-4282-92d7-1e64c39ef00e" InformativeScreenshot="57e9c48489691096f15466d83b9a7960.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 711, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-invalid' aaname='New password' /&gt;" Guid="62a44182-51c7-4a08-bb92-d5d895bb5db6" InformativeScreenshot="24bb1341315048c210d4d20374420287.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">password</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+            </Sequence>
+            <Sequence DisplayName="Add wrong password confirmation" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="text" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT confirmPassword'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 908, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT confirmPassword'" FullSelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-invalid' aaname='New password confirmation' /&gt;" Guid="1545934a-784e-4579-931a-f524058cf6a5" InformativeScreenshot="cf736a73748d3c41ff860602ac3b9683.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="1682, 209, 138, 50" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="809a1aa9-d20f-4043-aeda-1275a322d0db" InformativeScreenshot="e0cc64b85cd6a41bca5d0a705fbb8b51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Your confirmation'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_5" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 960, 1147, 24" DesignTimeScaleFactor="1.25" FriendlyName="'Your confirmation'" FullSelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your confirmation password is required.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SMALL' visibleinnertext='Your confirmation password is required.' type='' class='form-text text-danger' aaname='                             Your confirmation password is required.                         ' check:text='Your confirmation password is required.' /&gt;" Guid="5fe42eaf-fd8d-4b44-9103-d13e4012df69" InformativeScreenshot="9fc44a5b7c11a2d51f2e8217f6c038e9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT confirmPassword'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 908, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT confirmPassword'" FullSelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' type='password' class='form-control ng-pristine ng-invalid ng-touched' aaname='New password confirmation' /&gt;" Guid="65ca3b11-5b87-4e33-ae94-4e190519ee0c" InformativeScreenshot="105190f7de2c42616d4a05bcb16c67e5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">wrongPassword</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+            </Sequence>
+            <Sequence DisplayName="Try Register with wrong password" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 1004, 103, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Register' check:innerText='Register' /&gt;" Guid="a6d2fc4c-2dd2-4623-a11b-e394cfc33fe0" InformativeScreenshot="237130a3665b6abea9f710d46f2e6dfd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'The password'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_6" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 360, 1147, 62" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'The password'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='DIV' visibleinnertext='The password and its confirmation do not match!' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='DIV' visibleinnertext='The password and its confirmation do not match!' type='' class='alert alert-danger' aaname='                 The password and its confirmation do not match!             ' check:text='The password and its confirmation do not match!' /&gt;" Guid="7337a173-ee39-4608-92e4-c9feafc7287b" InformativeScreenshot="3d354ff95513228f6cc9d187fd79c656.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+            </Sequence>
+            <Sequence DisplayName="Add correct password confirmation" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="text" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT confirmPassword'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 908, 1147, 48" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'INPUT confirmPassword'" FullSelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='confirmPassword' tag='INPUT' type='password' class='form-control ng-pristine ng-invalid ng-touched' aaname='New password confirmation' /&gt;" Guid="65ca3b11-5b87-4e33-ae94-4e190519ee0c" InformativeScreenshot="105190f7de2c42616d4a05bcb16c67e5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">password</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+            </Sequence>
+            <Sequence DisplayName="Register with correct password" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="351, 932, 103, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Register'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Register' check:innerText='Register' /&gt;" Guid="bebeb5aa-0cc3-47a8-8232-b0a285814668" InformativeScreenshot="1cd1751a6e57e18432f156b8e588eebd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight 'Registration saved!'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NHighlight_8" ScopeIdentifier="260d09b3-84e2-40f3-b9f6-47b77592d774" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/account/register" DesignTimeRectangle="355, 399, 1161, 62" DesignTimeScaleFactor="1.25" FriendlyName="'Registration saved!'" FullSelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='Registration saved! Please check your email for confirmation.' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' visibleinnertext='Registration saved! Please check your email for confirmation.' type='' class='alert alert-success' aaname='                  Please check your email for confirmation.             ' check:text='Registration saved! Please check your email for confirmation.' /&gt;" Guid="f4bc3210-4164-4618-a180-bb89526588b8" InformativeScreenshot="b67f28ad9f5f3f3e8d8bfd560951959a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Registration' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVGSURBVGhD7Vf7T1NXHO8fxIa6/bBkPyiKETOzLJmJWbLE/bBHsmSbCdC5sC1MAgEFNmUIm0bqpi2PDRBqQAFpKfJmKk8LbWGj4/0oFErf3ec8Wq+3Mkp79YbkfvLJzc2953zP53PO97xUoX0OxYDcUAzIDcWA3FAMyA3FgNxQDMgNxYDcUAzIDcWA3BAaCDLMr23qB6eu3hsq0j+60vTktulpx9i/M8vOQIAX4AgFeT0pQMKFEQgGZtdcXZblmr6Z8nZbYbO5rN1aN2i3LW3yEhSs4jMD+LTt9eXVDbxxvuq1DG1Sulb4PKDWHc+pV996WNdrWVx3CUNIAkRzuDytYwt5+vEz5b3HLnUcKTCGacDzcIHx6EXjt7Uj6y6PsHVugH3K0nVDboRJAgq/w8zZ0hZtpzkRJ6wi4HR7m4fnMquHUguZaEMKVcx0h1/4l5QC41faxz4kQ3j8mQESaGJ29UCmjkjE839J/NCROfR15ZcVxvZRu9vnJynASEHDRoOXwYs/EBi2O/Lvmk/+2CmUm3JxNxYYe6wrkQaIAdbkTeO4SGjM1J7Ma7jWNhIZEIBFF4H92vL47j6Z/VQzCCkxKX6eqHK5ZTIyAakBGvmLG8YoZTExKYOMG4blraya7Jpey7wD0UhQ1tnhF2Bl063pnH6/tFuQHmJ9uxJVPq4YIOFoNzEDIUzfI9m1ImXxkObVOY1p6O8l1gbD4ob75zbLOz/xbBFp2hMR4USRadnpZpF5Co3ZV2LJ/l1JZjydHq9n6j6/boCNxY3t4nsTaJJJZxRp2hNZBNME7yBu4JbpKZmaUYISIrWRShZEkjAiHQmypNUC2SSFqI3gOU2HJCMgJHoEBsIdL1aQID/RDGJf5QY8Pn9qTv3LMVApuXRG5OTalocbsC04iPp9ZQBhe+luQAw0DNhEbUtCGEhWV708AxWmKazOxEBubb+obUkYNkAmgOQ2EFBdMwzxxMDZ0lZR29IwQ3u6uOmzm39RAwktndFEzDNlPT5/QOX1+Y9eqBO3HS/R69CNJ3bla22jbq8fK0R1/8ypyw+ZDTIUUowG4uBwuu7yqjZcnuQoHfETEzdDixPe9OI6xpZtMsCcYzu7fow0nC+NAcaJ+Q3VP0sbpNtEOvZEtoJRnspvNIzaA+G7DzHADkIhXFOCfbbVj67303EgFKmJg722FZVlzkE2f5GmPRHS07Vvf/fHjQejbp8vIj0a+O71I6Ps714hGSVSEwcfjC+oMNbxjUAk3d/8pgrr2BI7S/OU2cFA+C/2IJzt0orZAUksK3bi2qlybntwfhSJi4UYt4NqHS6Z2AfJPXYH0dFgHgD76lZu4/jxwg6RrNg5ueBUIV8/LLkvErcTSa/Tw+ZBdWX6byacYbkWoorr2xW0/DMb1kXnhYYx2OBrVJTKFxKF3yvpwk2Q7AONse/ESJjzVd9X90zOrbHmAa4rLvAQwcDU0ualJnNakUkkdCfCalm7FR1HDOB6mlVJr/Ppt4XzgfU3nuQlQ5uWd+eXlmGe67QPCRMDqU+C0ZDBIK4pv3dNf1Dew+YGpXixwsfDBQbcSJ1uL6rw+wC2NI1hPOWHWmKDKmZMVutO5N7J+bOvzzIPn7QVAtq6pOCBCdDQwNQqBuT01W7sVswJu0DDD86h+OXcpssdRoDXpxFcHm+XefbX1pEi/aPy+8P6wSnrvAPheIlXC+hBt2Ka6h/PlrdbC5vNJW2WpqE53E6ZdFZMYEDYCc+Dl3jV4K2/GNEG9ikUA3JDMSA3FANyQzEgNxQDckMxIDcUA3JDMSA39rmBUOg/fKPUXEGlFhQAAAAASUVORK5CYII=" InformativeScreenshot="feb0544cc340270e7e4f306e106314b2.jpg" Selector="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" Title="Welcome, Java Hipster!" Url="http://localhost:8080/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="545.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"Test ended"</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
