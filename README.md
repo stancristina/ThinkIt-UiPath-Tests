@@ -1,0 +1,1 @@
+Project contains automated tests for ThinkIt platform, written using UiPath platform.
