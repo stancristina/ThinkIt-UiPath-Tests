@@ -1,0 +1,304 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="OnePageLocalizationTest" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="URL" Type="InArgument(x:String)" />
+    <x:Property Name="IsFailed" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <this:OnePageLocalizationTest.URL>
+    <InArgument x:TypeArguments="x:String">
+      <Literal x:TypeArguments="x:String" Value="" />
+    </InArgument>
+  </this:OnePageLocalizationTest.URL>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>597.6,1594.4</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>Azure</x:String>
+      <x:String>Azure.AI.TextAnalytics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>Azure.Core</AssemblyReference>
+      <AssemblyReference>Azure.AI.TextAnalytics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="OnePageInternationalizationTest" sap:VirtualizedContainerService.HintSize="608,1529.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pageContent">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Welcome, Java Hipster!" sap:VirtualizedContainerService.HintSize="545.6,1417.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" IsIncognito="True" ScopeGuid="f282a207-16de-4329-9864-949e01b3c0e7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1200.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="3537, 292, 192, 70" DesignTimeScaleFactor="1.75" ElementType="Text" FriendlyName="'Account'" FullSelectorArgument="&lt;webctrl id='account-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='account-menu' tag='A' type='' class='dropdown-toggle nav-link' aaname='                                                                                                    Account                                                                                    ' check:innerText='Account' /&gt;" Guid="d751cc87-3ba8-43b2-ac9a-e6287d34ac02" InformativeScreenshot="430d7a8d37b5b3f313b65c7f13060b6d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="3450, 381, 278, 56" DesignTimeScaleFactor="1.75" ElementType="Text" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl id='login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login' tag='A' type='' class='dropdown-item' aaname='                                                          Sign in                         ' check:innerText='Sign in' /&gt;" Guid="9bc7ab0d-bc8c-4cb2-a047-be79b21e6db5" InformativeScreenshot="3aade70bc8615b0233746f30e1fc7102.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Text="admin" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1621, 521, 527, 67" DesignTimeScaleFactor="1.75" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control ng-pristine ng-valid ng-touched' aaname='Login' /&gt;" Guid="bb8c605c-a618-403e-82c2-de31a96e722e" InformativeScreenshot="4ba65ba3ada982358d6da2b1322422b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Text="admin" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1621, 672, 527, 67" DesignTimeScaleFactor="1.75" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control ng-untouched ng-pristine ng-valid' aaname='Password' /&gt;" Guid="4218aaff-e4be-4d42-935a-10dd41ee9516" InformativeScreenshot="075a3cdd519ca8d2de0c85ba8a2a2693.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign in'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="1621, 808, 128, 65" DesignTimeScaleFactor="1.75" ElementType="Button" FriendlyName="'Sign in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Sign in' check:innerText='Sign in' /&gt;" Guid="5bc553ac-b69e-4f49-a8e0-95b9d2d7f7a7" InformativeScreenshot="378b1cb226694b9d2a0aee160fc1882f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+            <Sequence DisplayName="Navigate to app page" sap:VirtualizedContainerService.HintSize="449.6,324.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="387.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Version="V3">
+                <uix:NGoToUrl.Url>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">URL</CSharpValue>
+                  </InArgument>
+                </uix:NGoToUrl.Url>
+              </uix:NGoToUrl>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            </Sequence>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="449.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+            <Sequence DisplayName="Get text" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="visibleinnertext" DisplayName="Get Attribute 'Sign in x'" sap:VirtualizedContainerService.HintSize="387.2,208" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" ScopeIdentifier="f282a207-16de-4329-9864-949e01b3c0e7" Version="V3">
+                <uix:NGetAttributeGeneric.Result>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">pageContent</CSharpReference>
+                  </OutArgument>
+                </uix:NGetAttributeGeneric.Result>
+                <uix:NGetAttributeGeneric.Target>
+                  <uix:TargetAnchorable BrowserURL="http://localhost:8080/" DesignTimeRectangle="12, 267, 3745, 853" DesignTimeScaleFactor="1.75" FriendlyName="'Sign in x'" FullSelectorArgument="&lt;webctrl tag='body' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='NGB-MODAL-WINDOW' type='' class='d-block fade modal show' aaname='          ' check:innerText='Sign in&amp;#xD;&amp;#xA;x&amp;#xD;&amp;#xA;Login&amp;#xD;&amp;#xA;Password&amp;#xD;&amp;#xA;Remember me&amp;#xD;&amp;#xA;Sign in&amp;#xD;&amp;#xA;Did you forget your password?&amp;#xD;&amp;#xA;You don&amp;apos;t have an' /&gt;" Guid="8dcb4d8d-c170-4442-8e7b-00b16956305e" ImageBase64="" InformativeScreenshot="d3730a02f0c79ec2411fdf1a8f8f9131.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NGetAttributeGeneric.Target>
+              </uix:NGetAttributeGeneric>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">pageContent</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+            </Sequence>
+            <Sequence DisplayName="Validate language" sap:VirtualizedContainerService.HintSize="572.8,975.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="dominantLanguage" />
+                <Variable x:TypeArguments="x:Double" Name="percentage" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeCode ContinueOnError="{x:Null}" Code="AzureKeyCredential credentials = new AzureKeyCredential(&quot;8d2ea32e960548afab965d578502c026&quot;);&#xD;&#xA;Uri endpoint = new Uri(&quot;https://thinkit-language-service.cognitiveservices.azure.com/&quot;);&#xD;&#xA;&#xD;&#xA;var client = new TextAnalyticsClient(endpoint, credentials);&#xD;&#xA;DetectedLanguage detectedLanguage = client.DetectLanguage(pageContent);&#xD;&#xA;System.Console.WriteLine(detectedLanguage.ToString());&#xD;&#xA;dominantLanguage = detectedLanguage.Name;&#xD;&#xA;percentage = detectedLanguage.ConfidenceScore;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="510.4,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+                <ui:InvokeCode.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="pageContent">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">pageContent</CSharpValue>
+                  </InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="dominantLanguage">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">dominantLanguage</CSharpReference>
+                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:Double" x:Key="percentage">
+                    <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">percentage</CSharpReference>
+                  </OutArgument>
+                </ui:InvokeCode.Arguments>
+              </ui:InvokeCode>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510.4,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">"Dominant language is " + dominantLanguage + " with confidence score of " + percentage.ToString()</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <If sap:VirtualizedContainerService.HintSize="510.4,525.6" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Condition>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">dominantLanguage.Equals("English") &amp;&amp; percentage &gt; 0.95</CSharpValue>
+                  </InArgument>
+                </If.Condition>
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">IsFailed</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Boolean">
+                          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">IsFailed</CSharpReference>
+                        </OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1908, -1076, 3864, 2114" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVGSURBVGhD7Vf7T1NXHO8fxIa6/bBkPyiKETOzLJmJWbLE/bBHsmSbCdC5sC1MAgEFNmUIm0bqpi2PDRBqQAFpKfJmKk8LbWGj4/0oFErf3ec8Wq+3Mkp79YbkfvLJzc2953zP53PO97xUoX0OxYDcUAzIDcWA3FAMyA3FgNxQDMgNxYDcUAzIDcWA3BAaCDLMr23qB6eu3hsq0j+60vTktulpx9i/M8vOQIAX4AgFeT0pQMKFEQgGZtdcXZblmr6Z8nZbYbO5rN1aN2i3LW3yEhSs4jMD+LTt9eXVDbxxvuq1DG1Sulb4PKDWHc+pV996WNdrWVx3CUNIAkRzuDytYwt5+vEz5b3HLnUcKTCGacDzcIHx6EXjt7Uj6y6PsHVugH3K0nVDboRJAgq/w8zZ0hZtpzkRJ6wi4HR7m4fnMquHUguZaEMKVcx0h1/4l5QC41faxz4kQ3j8mQESaGJ29UCmjkjE839J/NCROfR15ZcVxvZRu9vnJynASEHDRoOXwYs/EBi2O/Lvmk/+2CmUm3JxNxYYe6wrkQaIAdbkTeO4SGjM1J7Ma7jWNhIZEIBFF4H92vL47j6Z/VQzCCkxKX6eqHK5ZTIyAakBGvmLG8YoZTExKYOMG4blraya7Jpey7wD0UhQ1tnhF2Bl063pnH6/tFuQHmJ9uxJVPq4YIOFoNzEDIUzfI9m1ImXxkObVOY1p6O8l1gbD4ob75zbLOz/xbBFp2hMR4USRadnpZpF5Co3ZV2LJ/l1JZjydHq9n6j6/boCNxY3t4nsTaJJJZxRp2hNZBNME7yBu4JbpKZmaUYISIrWRShZEkjAiHQmypNUC2SSFqI3gOU2HJCMgJHoEBsIdL1aQID/RDGJf5QY8Pn9qTv3LMVApuXRG5OTalocbsC04iPp9ZQBhe+luQAw0DNhEbUtCGEhWV708AxWmKazOxEBubb+obUkYNkAmgOQ2EFBdMwzxxMDZ0lZR29IwQ3u6uOmzm39RAwktndFEzDNlPT5/QOX1+Y9eqBO3HS/R69CNJ3bla22jbq8fK0R1/8ypyw+ZDTIUUowG4uBwuu7yqjZcnuQoHfETEzdDixPe9OI6xpZtMsCcYzu7fow0nC+NAcaJ+Q3VP0sbpNtEOvZEtoJRnspvNIzaA+G7DzHADkIhXFOCfbbVj67303EgFKmJg722FZVlzkE2f5GmPRHS07Vvf/fHjQejbp8vIj0a+O71I6Ps714hGSVSEwcfjC+oMNbxjUAk3d/8pgrr2BI7S/OU2cFA+C/2IJzt0orZAUksK3bi2qlybntwfhSJi4UYt4NqHS6Z2AfJPXYH0dFgHgD76lZu4/jxwg6RrNg5ueBUIV8/LLkvErcTSa/Tw+ZBdWX6byacYbkWoorr2xW0/DMb1kXnhYYx2OBrVJTKFxKF3yvpwk2Q7AONse/ESJjzVd9X90zOrbHmAa4rLvAQwcDU0ualJnNakUkkdCfCalm7FR1HDOB6mlVJr/Ppt4XzgfU3nuQlQ5uWd+eXlmGe67QPCRMDqU+C0ZDBIK4pv3dNf1Dew+YGpXixwsfDBQbcSJ1uL6rw+wC2NI1hPOWHWmKDKmZMVutO5N7J+bOvzzIPn7QVAtq6pOCBCdDQwNQqBuT01W7sVswJu0DDD86h+OXcpssdRoDXpxFcHm+XefbX1pEi/aPy+8P6wSnrvAPheIlXC+hBt2Ka6h/PlrdbC5vNJW2WpqE53E6ZdFZMYEDYCc+Dl3jV4K2/GNEG9ikUA3JDMSA3FANyQzEgNxQDckMxIDcUA3JDMSA39rmBUOg/fKPUXEGlFhQAAAAASUVORK5CYII=" InformativeScreenshot="81accdcaeb06e11a42969f9e165a67ce.jpg" Selector="&lt;html app='msedge.exe' title='Welcome, Java Hipster!' /&gt;" Title="Welcome, Java Hipster!" Url="http://localhost:8080/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -3,6 +3,8 @@
   "description": "Test Automation Project",
   "main": "Main.xaml",
   "dependencies": {
+    "Azure.AI.TextAnalytics": "[5.3.0-beta.3]",
+    "Azure.Core": "[1.32.0]",
     "UiPath.System.Activities": "[23.4.2]",
     "UiPath.Testing.Activities": "[23.4.0]",
     "UiPath.UIAutomation.Activities": "[23.4.4]"
@@ -11,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.4.1.0",
-  "projectVersion": "1.0.140012266",
+  "projectVersion": "1.0.140386219",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -53,6 +55,19 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "ActivationAccountTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0831ab0c-9643-46b9-94c2-b69f09a5f203",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "LocalizationSupportTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2ef4b10d-e8ff-43c5-a854-c4c667c77a17",
+        "testCaseType": "TestCase",
+        "fileName": "AppAccessPerformanceTest.xaml"
       }
     ],
     "modernBehavior": true

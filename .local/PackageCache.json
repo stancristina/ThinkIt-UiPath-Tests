@@ -31,8 +31,8 @@
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.management.infrastructure.cimcmdlets\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.Management.Infrastructure.CimCmdlets.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.Native.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\microsoft.management.infrastructure.runtime.win\\2.0.0\\runtimes/win10-x64/lib/netstandard1.6/Microsoft.Management.Infrastructure.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.powershell.commands.diagnostics\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Diagnostics.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.powershell.commands.management\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Management.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.powershell.commands.utility\\7.1.0\\runtimes/win/lib/net5.0/Microsoft.PowerShell.Commands.Utility.dll",
@@ -68,8 +68,8 @@
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.duplex\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Duplex.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.http\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Http.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.nettcp\\4.7.0\\lib/netstandard2.0/System.ServiceModel.NetTcp.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.Primitives.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib/netcoreapp2.1/System.ServiceModel.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.security\\4.7.0\\lib/netstandard2.0/System.ServiceModel.Security.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.syndication\\5.0.0\\lib/netstandard2.0/System.ServiceModel.Syndication.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\system.serviceprocess.servicecontroller\\5.0.0\\runtimes/win/lib/netstandard2.0/System.ServiceProcess.ServiceController.dll",
@@ -98,8 +98,8 @@
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.telemetry.client\\1.5.3\\lib/netstandard2.0/TelemetryClient.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.Activities.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib/net6.0-windows7.0/UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0"
     },
@@ -134,18 +134,43 @@
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities\\23.4.4"
+    },
+    {
+      "Package": {
+        "Id": "Azure.AI.TextAnalytics",
+        "Version": "5.3.0-beta.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\azure.ai.textanalytics\\5.3.0-beta.3\\lib/netstandard2.0/Azure.AI.TextAnalytics.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.32.0\\lib/net6.0/Azure.Core.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\azure.ai.textanalytics\\5.3.0-beta.3"
+    },
+    {
+      "Package": {
+        "Id": "Azure.Core",
+        "Version": "1.32.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.32.0\\lib/net6.0/Azure.Core.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.32.0"
     }
   ],
   "Conflicts": [],
@@ -161,6 +186,58 @@
         {
           "Item1": "System.Reflection.Emit",
           "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "Azure.AI.TextAnalytics": {
+      "Id": "Azure.AI.TextAnalytics",
+      "Version": "5.3.0-beta.3",
+      "Dependencies": [
+        {
+          "Item1": "Azure.Core",
+          "Item2": "[1.30.0, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.7.2, )"
+        }
+      ]
+    },
+    "Azure.Core": {
+      "Id": "Azure.Core",
+      "Version": "1.32.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "System.Diagnostics.DiagnosticSource",
+          "Item2": "[4.6.0, )"
+        },
+        {
+          "Item1": "System.Memory.Data",
+          "Item2": "[1.0.2, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.7.2, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.7.2, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
         }
       ]
     },
@@ -344,6 +421,11 @@
           "Item2": "[4.3.4, )"
         }
       ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces": {
+      "Id": "Microsoft.Bcl.AsyncInterfaces",
+      "Version": "1.1.1",
+      "Dependencies": []
     },
     "Microsoft.CodeAnalysis.Analyzers": {
       "Id": "Microsoft.CodeAnalysis.Analyzers",
@@ -2407,6 +2489,20 @@
       "Version": "4.5.5",
       "Dependencies": []
     },
+    "System.Memory.Data": {
+      "Id": "System.Memory.Data",
+      "Version": "1.0.2",
+      "Dependencies": [
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.7.2, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.6.0, )"
+        }
+      ]
+    },
     "System.Net.Http": {
       "Id": "System.Net.Http",
       "Version": "4.3.4",
@@ -2573,6 +2669,11 @@
           "Item2": "[4.3.0, )"
         }
       ]
+    },
+    "System.Numerics.Vectors": {
+      "Id": "System.Numerics.Vectors",
+      "Version": "4.5.0",
+      "Dependencies": []
     },
     "System.ObjectModel": {
       "Id": "System.ObjectModel",
@@ -3489,6 +3590,11 @@
       "Version": "5.0.0",
       "Dependencies": []
     },
+    "System.Text.Json": {
+      "Id": "System.Text.Json",
+      "Version": "4.7.2",
+      "Dependencies": []
+    },
     "System.Text.RegularExpressions": {
       "Id": "System.Text.RegularExpressions",
       "Version": "4.3.0",
@@ -4093,6 +4199,26 @@
     },
     {
       "Package": {
+        "Id": "Azure.AI.TextAnalytics",
+        "Version": "5.3.0-beta.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\azure.ai.textanalytics\\5.3.0-beta.3\\lib\\netstandard2.0\\Azure.AI.TextAnalytics.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\azure.ai.textanalytics\\5.3.0-beta.3"
+    },
+    {
+      "Package": {
+        "Id": "Azure.Core",
+        "Version": "1.32.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.32.0\\lib\\net6.0\\Azure.Core.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\azure.core\\1.32.0"
+    },
+    {
+      "Package": {
         "Id": "CsvHelper",
         "Version": "16.0.0"
       },
@@ -4220,6 +4346,16 @@
         "C:\\Users\\stanc\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib\\netstandard2.0\\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Bcl.AsyncInterfaces",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib\\netstandard2.1\\Microsoft.Bcl.AsyncInterfaces.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1"
     },
     {
       "Package": {
@@ -5291,6 +5427,16 @@
     },
     {
       "Package": {
+        "Id": "System.Memory.Data",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\system.memory.data\\1.0.2\\lib\\netstandard2.0\\System.Memory.Data.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.memory.data\\1.0.2"
+    },
+    {
+      "Package": {
         "Id": "System.Net.Http",
         "Version": "4.3.4"
       },
@@ -5322,6 +5468,16 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.net.sockets\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Numerics.Vectors",
+        "Version": "4.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib\\netcoreapp2.0\\_._"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.numerics.vectors\\4.5.0"
     },
     {
       "Package": {
@@ -5675,8 +5831,8 @@
         "Version": "4.7.0"
       },
       "Assemblies": [
-        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.Primitives.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.Primitives.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0\\lib\\netcoreapp2.1\\System.ServiceModel.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.servicemodel.primitives\\4.7.0"
     },
@@ -5745,6 +5901,16 @@
         "C:\\Users\\stanc\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\lib\\netcoreapp3.0\\System.Text.Encodings.Web.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.text.encodings.web\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Text.Json",
+        "Version": "4.7.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\stanc\\.nuget\\packages\\system.text.json\\4.7.2\\lib\\netcoreapp3.0\\System.Text.Json.dll"
+      ],
+      "Path": "C:\\Users\\stanc\\.nuget\\packages\\system.text.json\\4.7.2"
     },
     {
       "Package": {
@@ -5974,8 +6140,8 @@
       "Assemblies": [
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.Design.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.Activities.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.RulesLibrary.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0\\lib\\net6.0-windows7.0\\UiPath.Testing.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\uipath.testing.activities\\23.4.0"
     },
@@ -6003,11 +6169,11 @@
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\23.4.4"
     },
@@ -6019,9 +6185,9 @@
       "Assemblies": [
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\stanc\\.nuget\\packages\\uipath.vision\\3.10.1"
     }
